@@ -1,6 +1,7 @@
 /* 
     DO NOT CHANGE THE CODE BELOW
 */
+
 body {
   font-family: Arial;
   background: #f1f1f1;
@@ -43,3 +44,88 @@ body {
 /* 
     START WRITING YOUR CSS CODE HERE
 */
+
+.header a{
+  float: left;
+  color: darkred;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 12px;
+}
+
+.header a:hover{
+  color: red;
+}
+
+.header{
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+
+.active{
+  color: green;
+}
+
+
+.active { background-color: azure;
+  color: grey
+}
+
+.header-right{
+float: right;
+margin-top: 12 px;
+}
+
+
+.left-col{
+  float: left;
+  width: 75%;
+}
+.card{
+  background-color: #e0e0e0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.right-col{
+  float: left;
+  width: 25%;
+  padding: 20px;
+  background-color: #afafaf;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .header a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right{
+    float: none;
+  }
+
+  .left-col{
+    width: 100%;
+  }
+  .right-col{
+    width: 100%;
+  }
+
+  .card{
+    font-size: 30px;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
